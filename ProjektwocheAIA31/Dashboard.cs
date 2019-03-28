@@ -339,7 +339,7 @@ namespace ProjektwocheAIA31
             for (int i = myDataTableZeitplanung.Rows.Count - 1; i >= 0; i--)
             {
                 DataRow row = myDataTableZeitplanung.Rows[i];
-                if (DateTime.Parse(row["start"].ToString()).Hour == stunde && row["workshopID"] == textBoxKursID.text)
+                if (DateTime.Parse(row["start"].ToString()).Hour == stunde && row["workshopID"] == textBoxKursID.Text)
                 {
                     row.Delete();
                     UpdateZeitplanungDB();
